@@ -1,0 +1,442 @@
+<html>
+  <head>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    }
+    form {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+    th, td {
+    padding: 10px;
+    }
+    th {
+    background-color: #f2f2f2;
+    }
+    td input[type="radio"] {
+    margin-right: 5px;
+    }
+    input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+    background-color: #45a049;
+    }
+    p {
+    margin: 5px;
+    }
+    /* Additional styling for headings */
+    h1 {
+    color: #4CAF50;
+    }
+    .heading {
+    color: #82f36b;
+    }
+    h2 {
+    color: #555;
+    }
+    table {
+    border-collapse: collapse; /* Optional: To remove gaps between cell borders */
+    border: 1px solid black; /* Add a border to the table */
+    margin: 0 auto; /* This centers the table horizontally */
+    }
+    th, td {
+    border: 1px solid black; /* Set a border for table cells */
+    padding: 8px; /* Add some padding for better visualization */
+    text-align: center; /* Center the text within the cells */
+    }
+    textarea {
+      width: 100%;
+      height: 50%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+    }
+    </style
+  </head>
+  <body align="center">
+    <form action="connection.php" method="post">
+      <h1>Geethanjali College of Engineering & Technology</h1>
+      <br>
+      <h1>Department of CSE</h1>
+      <br>
+      <h2>GRADUATE SURVEY</h2>
+      <br>
+      <table border="1" align="center" cellpadding="10">
+        <tr>
+          <td>NAME:<input type="text" name="name"></td>
+          <td>ROLL NO:<input type="text" name="roll"></td>
+        </tr>
+        <tr>
+          <td>GRADUATED YEAR:<select name="year">
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+        </select><br></td>
+          <td>DATE:<input type="date" name="date"></td>
+        </tr>
+        <tr>
+          <td>PROGRAM OF STUDY:<input type="text" name="program"></td>
+          <td>BRANCH:<input type="text" name="branch"></td>
+        </tr>
+      </table>
+      <br>
+      <p>Please evaluate the following scale :</p>
+      <br>
+      <table border=1 align="center" textalign="center">
+      <tr>
+        <td>Excellent(E)</td>
+        <td>Good(G)</td>
+        <td>Average(A)</td>
+        <td>Poor(P)</td>
+        <td>No Comment(NC)</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      </tr><br><br>
+      <table border="2" align="center">
+        <tr>
+          <td>SNO</td>
+          <td>QUESTIONAIRE</td>
+          <td>E<br>5</td>
+          <td>G<br>4</td>
+          <td>A<br>3</td>
+          <td>P<br>2</td>
+          <td>NC<br>1</td>
+        </tr>
+        <tr>
+          <th colspan="2">SECTION 1:PROGRAM EVALUATION</th>
+          <td colspan="5"></td>
+        </tr>
+        <tr>
+          <td>1)</td>
+          <td>What is your perception of the academic expectations of your program vis-à-vis your achievements?</td>
+          <td><input type="radio" name="p1" value="5"></td>
+          <td><input type="radio" name="p1" value="4"></td>
+          <td><input type="radio" name="p1" value="3"></td>
+          <td><input type="radio" name="p1" value="2"></td>
+          <td><input type="radio" name="p1" value="1"></td>
+        </tr>
+        <tr>
+          <td>2)</td>
+          <td>How would you rate your program’s performance in keeping pace with recent trends and developments in CSE discipline?</td>
+          <td><input type="radio" name="p2" value="5"></td>
+          <td><input type="radio" name="p2" value="4"></td>
+          <td><input type="radio" name="p2" value="3"></td>
+          <td><input type="radio" name="p2" value="2"></td>
+          <td><input type="radio" name="p2" value="1"></td>
+        </tr>
+        <tr>
+          <td>3)</td>
+          <td>How would you rate your professional training and research opportunities your program provided to graduate students? </td>
+          <td><input type="radio" name="p3" value="5"></td>
+          <td><input type="radio" name="p3" value="4"></td>
+          <td><input type="radio" name="p3" value="3"></td>
+          <td><input type="radio" name="p3" value="2"></td>
+          <td><input type="radio" name="p3" value="1"></td>
+        </tr>
+        <tr>
+          <td>4)</td>
+          <td>How would you rate the adequacy of space, facilities and equipment in your program?</td>
+          <td><input type="radio" name="p4" value="5"></td>
+          <td><input type="radio" name="p4" value="4"></td>
+          <td><input type="radio" name="p4" value="3"></td>
+          <td><input type="radio" name="p4" value="2"></td>
+          <td><input type="radio" name="p4" value="1"></td>
+        </tr>
+        <tr>
+          <td>5)</td>
+          <td>Indicate your level of satisfaction with the supervision and guidance you received during your study.</td>
+          <td><input type="radio" name="p5" value="5"></td>
+          <td><input type="radio" name="p5" value="4"></td>
+          <td><input type="radio" name="p5" value="3"></td>
+          <td><input type="radio" name="p5" value="2"></td>
+          <td><input type="radio" name="p5" value="1"></td>
+        </tr>
+        <tr>
+          <td>6)</td>
+          <td>What is your perception of the quality of the faculty vis-à-vis qualifications , experience and teaching expertise  in your program</td>
+          <td><input type="radio" name="p6" value="5"></td>
+          <td><input type="radio" name="p6" value="4"></td>
+          <td><input type="radio" name="p6" value="3"></td>
+          <td><input type="radio" name="p6" value="2"></td>
+          <td><input type="radio" name="p6" value="1"></td>
+        </tr>
+        <tr>
+          <td>7)</td>
+          <td>How would you rate the overall quality of your program?</td>
+          <td><input type="radio" name="p7" value="5"></td>
+          <td><input type="radio" name="p7" value="4"></td>
+          <td><input type="radio" name="p7" value="3"></td>
+          <td><input type="radio" name="p7" value="2"></td>
+          <td><input type="radio" name="p7" value="1"></td>
+        </tr>
+        <tr>
+          <td>8)</td>
+          <td>Suggestion for Improvement in Curriculum design and development</td>
+          <td><input type="radio" name="p8" value="5"></td>
+          <td><input type="radio" name="p8" value="4"></td>
+          <td><input type="radio" name="p8" value="3"></td>
+          <td><input type="radio" name="p8" value="2"></td>
+          <td><input type="radio" name="p8" value="1"></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr><th>SECTION-2 POST-GRADUATE PLANS</th></tr>
+        <tr><td>1a) What are your immediate plans after graduation? </td></tr>
+        <tr><td><label>
+            <input type="radio" name="occupation" value="Postgraduate study">
+            Postgraduate study
+        </label>
+        <label>
+            <input type="radio" name="occupation" value="Employment in business or industry">
+            Employment in business or industry
+        </label>
+        <label>
+            <input type="radio" name="occupation" value="Government service">
+            Government service<br>
+        </label>
+        <label>
+            <input type="radio" name="occupation" value="Employment in a non-profit organization">
+            Employment in a non-profit organization
+        </label>
+        <label>
+            <input type="radio" name="occupation" value="Self employment/Entrepreneur">
+            Self employment/ Entrepreneur
+        </label>
+        <label>
+            <input type="radio" name="occupation" value="Defence service">
+            Defence service
+        </label><br></td></tr></table>
+
+      <p>Program Outcomes: Program outcomes are narrower statements that describe what students are expected to know and be able to do by the time of graduation. <br>
+        Please assess whether the following program outcomes have been achieved during your studies and rate in a scale of 1 to 5.<br>
+      <table border=1 align="center" textalign="center">
+      <tr>
+        <td>Excellent(E)</td>
+        <td>Good(G)</td>
+        <td>Average(A)</td>
+        <td>Poor(P)</td>
+        <td>No Comment(NC)</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      </tr><br><br></p>
+      <table border="1">
+        <tr>
+          <th colspan="2">Program Outcomes</th>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+         
+        </tr>
+        <tr>
+          <td>po1</td>
+          </td>
+          <td>
+            PO1. Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.
+          </td>
+          <td><input type="radio" name="po1" value="5"></td>
+          <td><input type="radio" name="po1" value="4"></td>
+          <td><input type="radio" name="po1" value="3"></td>
+          <td><input type="radio" name="po1" value="2"></td>
+          <td><input type="radio" name="po1" value="1"></td>
+      
+          </tr>
+        <tr>
+          <td>po2</td>
+          <td>
+            PO2. Problem  analysis:  Identify,  formulate,  review    research  literature,  and  analyze  complex engineering  problems  reaching  substantiated  conclusions  using  first  principles  of  mathematics, natural sciences, and engineering sciences.
+          </td>
+          <td><input type="radio" name="po2" value="5"></td>
+          <td><input type="radio" name="po2" value="4"></td>
+          <td><input type="radio" name="po2" value="3"></td>
+          <td><input type="radio" name="po2" value="2"></td>
+          <td><input type="radio" name="po2" value="1"></td>
+        </tr>
+        <tr>
+          <td>po3</td>
+          <td>
+            PO3.  Design/development  of  solutions :  Design solutions  for  complex  engineering  problems  and design  system  components  or  processes  that  meet  the  specified  needs  with  appropriate consideration  for  the  public  health  and  safety,  and  the  cultural,  societal,  and  environmental considerations.
+          </td>
+          <td><input type="radio" name="po3" value="5"></td>
+          <td><input type="radio" name="po3" value="4"></td>
+          <td><input type="radio" name="po3" value="3"></td>
+          <td><input type="radio" name="po3" value="2"></td>
+          <td><input type="radio" name="po3" value="1"></td>
+        </tr>
+        <tr>
+          <td>po4</td>
+          <td>
+            PO4. Conduct investigations of complex problems:  Use  research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.
+          </td>
+          <td><input type="radio" name="po4" value="5"></td>
+          <td><input type="radio" name="po4" value="4"></td>
+          <td><input type="radio" name="po4" value="3"></td>
+          <td><input type="radio" name="po4" value="2"></td>
+          <td><input type="radio" name="po4" value="1"></td>
+        </tr>
+        <tr>
+          <td>po5</td>
+          <td>
+            PO5. Modern  tool  usage:  Create,  select,  and  apply   appropriate  techniques,  resources,  and  modern engineering and IT tools including prediction and modelling to complex engineering activities with an understanding of the limitations.
+          </td>
+          <td><input type="radio" name="po5" value="5"></td>
+          <td><input type="radio" name="po5" value="4"></td>
+          <td><input type="radio" name="po5" value="3"></td>
+          <td><input type="radio" name="po5" value="2"></td>
+          <td><input type="radio" name="po5" value="1"></td>
+        </tr>
+        <tr>
+          <td>po6</td>
+          <td>
+            PO6.   The  engineer  and  society:  Apply  reasoning    informed  by  the  contextual  knowledge  to  assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.
+          </td>
+          <td><input type="radio" name="po6" value="5"></td>
+          <td><input type="radio" name="po6" value="4"></td>
+          <td><input type="radio" name="po6" value="3"></td>
+          <td><input type="radio" name="po6" value="2"></td>
+          <td><input type="radio" name="po6" value="1"></td>
+        </tr>
+        <tr>
+          <td>po7</td>
+          <td>
+            PO7. Environment and sustainability: Understand the  impact of the professional engineering solutions in  societal  and  environmental  contexts,  and demonstrate  the  knowledge  of,  and  need  for sustainable development.
+          </td>
+          <td><input type="radio" name="po7" value="5"></td>
+          <td><input type="radio" name="po7" value="4"></td>
+          <td><input type="radio" name="po7" value="3"></td>
+          <td><input type="radio" name="po7" value="2"></td>
+          <td><input type="radio" name="po7" value="1"></td>
+        </tr>
+        <tr>
+          <td>po8</td>
+          <td>
+            PO8.   Ethics: Apply ethical principles and commit to    professional ethics and responsibilities and norms of the engineering practice.
+          </td>
+          <td><input type="radio" name="po8" value="5"></td>
+          <td><input type="radio" name="po8" value="4"></td>
+          <td><input type="radio" name="po8" value="3"></td>
+          <td><input type="radio" name="po8" value="2"></td>
+          <td><input type="radio" name="po8" value="1"></td>
+        </tr>
+        <tr>
+          <td>p09</td>
+          <td>
+            PO9.  Individual and team work:  Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.
+          </td>
+          <td><input type="radio" name="po9" value="5"></td>
+          <td><input type="radio" name="po9" value="4"></td>
+          <td><input type="radio" name="po9" value="3"></td>
+          <td><input type="radio" name="po9" value="2"></td>
+          <td><input type="radio" name="po9" value="1"></td>
+        </tr>
+        <tr>
+          <td>po10</td>
+          <td>
+            PO10.Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.
+          </td>
+          <td><input type="radio" name="po10" value="5"></td>
+          <td><input type="radio" name="po10" value="4"></td>
+          <td><input type="radio" name="po10" value="3"></td>
+          <td><input type="radio" name="po10" value="2"></td>
+          <td><input type="radio" name="po10" value="1"></td>
+        </tr>
+        <tr>
+          <td>po11</td>
+          <td>
+            PO11.Project  management  and  finance:   Demonstrate  knowledge  and  understanding  of  the engineering  and  management  principles  and  apply  these  to  one’s  own  work,  as  a  member  and leader in a team, to manage projects and in multidisciplinary environments.
+          </td>
+          <td><input type="radio" name="po11" value="5"></td>
+          <td><input type="radio" name="po11" value="4"></td>
+          <td><input type="radio" name="po11" value="3"></td>
+          <td><input type="radio" name="po11" value="2"></td>
+          <td><input type="radio" name="po11" value="1"></td>
+        </tr>
+        <tr>
+          <td>po12</td>
+          <td>
+            PO12. Life-long learning :  Recognize  the  need  for, and have  the  preparation  and  ability to  engage  in independent and life-long learning in the broadest context of technological change.
+          </td>
+          <td><input type="radio" name="po12" value="5"></td>
+          <td><input type="radio" name="po12" value="4"></td>
+          <td><input type="radio" name="po12" value="3"></td>
+          <td><input type="radio" name="po12" value="2"></td>
+          <td><input type="radio" name="po12" value="1"></td>
+        </tr>
+        <tr>
+          <td>pso1</td>
+          <td>
+            PSO1.To identify and define the Computing requirements for its solution under given constraints. 
+          </td>
+          <td><input type="radio" name="pso1" value="5"></td>
+          <td><input type="radio" name="pso1" value="4"></td>
+          <td><input type="radio" name="pso1" value="3"></td>
+          <td><input type="radio" name="pso1" value="2"></td>
+          <td><input type="radio" name="pso1" value="1"></td>
+        </tr>
+        <tr>
+          <td>pso2</td>
+          <td>
+            PSO2.To follow the best practices namely SEI-CMM levels and six sigma which varies from time to time for software development project using open ended programming environment to produce software deliverables as per customer needs.
+          </td>
+          <td><input type="radio" name="pso2" value="5"></td>
+          <td><input type="radio" name="pso2" value="4"></td>
+          <td><input type="radio" name="pso2" value="3"></td>
+          <td><input type="radio" name="pso2" value="2"></td>
+          <td><input type="radio" name="pso2" value="1"></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+        <th>  <label for="feedback">Feedback:</label></th>
+        <td>
+    <textarea id="feedback" name="feedback" maxlength="3000" placeholder="Enter your feedback here (maximum 3000 characters)"></textarea>
+  </td></tr></table>
+      <input type="submit" value="Submit" onclick="showRecordedMessage()">
+    </form>
+    <script>
+      // This function will be called after form submission or whenever you want to show the alert
+      function showRecordedMessage() {
+          alert("Your records have been recorded!");
+      }
+    </script>
+  </body>
+</html>
