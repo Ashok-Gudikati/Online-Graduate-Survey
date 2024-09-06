@@ -20,4 +20,4 @@ The goal of this project is to replace the existing manual feedback system with 
 ## Technology Stack
 - **Frontend**: HTML, CSS
 - **Backend**: Python, Flask
-- **Database**: SQLite (or other database systems as required)
+- **Database**: SQL (or other database systems as required)
